@@ -81,7 +81,7 @@ export class TaskParameters {
             throw Error('The Value of OS Type must be either Linux or Windows only!')
         } else {
             this._osType = (osType == 'Linux') ? 'Linux' : 'Windows';
-        }
+        } 
         let ports = core.getInput('ports');
         this._ports = [];
         this._getPorts(ports);
